@@ -451,10 +451,13 @@ if(profiles.length==0){
 //  <=======================>
 //  <====  #Assignments 32 Checking Usernames: ====>
 
-const current_users:string[]=['Zane', 'Micheal', 'Admin', 'Dave','Williams', 'John'];
+const current_users:string[]=['Zane', 'Micheal', 'Admin', 'Dave','Williams', 'John',"LUKE"];
 const new_users:string[]=['Zane', 'Micheal', 'Williams', 'Chad', 'JOHN','Mike',"luke"];
 new_users.forEach((newname)=>{
-        if(current_users.includes(newname)){
+        let currentUsers=current_users.map((name)=>{
+            return name.toLowerCase();
+        })
+        if(currentUsers.includes(newname.toLowerCase())){
             console.log(`You need to enter a new username "${newname}" is not available.`)
         }else{
             console.log(`Username "${newname}" Available`)
