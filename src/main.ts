@@ -621,14 +621,13 @@ make_sandwich("Letus","Chicken","bread","thoudsand island");
 make_sandwich("Chicken","bread","tomatoes","mayoniese");
 
 //  <=======================>
-//  <====  #Assignments 45 ====>
 
 type car={
     [Key:string]:any
     manufacturer:string,
     model:string,
 }
-
+//  <====  #Assignments 45 ====>
 function Carinfo(manufacturer:string,model:string,optional?:Record<string,any>):car{
     return {
         manufacturer,

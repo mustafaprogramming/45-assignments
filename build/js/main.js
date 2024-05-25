@@ -576,6 +576,7 @@ function make_sandwich(...items) {
 make_sandwich("Letus", "Chicken", "bread", "tomatoes", "mayoniese");
 make_sandwich("Letus", "Chicken", "bread", "thoudsand island");
 make_sandwich("Chicken", "bread", "tomatoes", "mayoniese");
+//  <====  #Assignments 45 ====>
 function Carinfo(manufacturer, model, optional) {
     return {
         manufacturer,
